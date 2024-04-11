@@ -19,6 +19,7 @@ def vigenere_cipher_encrypt(text, key):
 while True:
     text = input("Enter the message to encrypt (or type 'exit' to quit): ")
     if text.lower() == 'exit':
+        print()
         print("Goodbye! :)")
         break
     key = input("Enter the key: ")
