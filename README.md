@@ -1,96 +1,45 @@
-<!DOCTYPE html>
-<html>
+# Cipher Library
 
-<head>
-    <title>Python Cipher Library</title>
-</head>
+## Table of Contents
+- [Introduction](#introduction)
+- [Usage](#usage)
+  - [Caesar Cipher](#caesar-cipher)
+- [Roadmap](#roadmap)
+- [Contribution](#contribution)
+- [Phase 2: Decryption Algorithms](#phase-2-decryption-algorithms)
 
-<body>
+## Introduction
 
-    <h1>Python Cipher Library</h1>
+Welcome to the Cipher Library! This project aims to provide a collection of encryption algorithms implemented in Python. Currently, the library supports the following ciphers:
 
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#roadmap">Roadmap</a></li>
-        <li><a href="#contribution">Contribution</a></li>
-        <li><a href="#phase-2-decryption-algorithms">Phase 2: Decryption Algorithms</a></li>
-    </ul>
+- Caesar Cipher
+- Vigenère Cipher
+- Simple Substitution Cipher
 
-    <h2 id="introduction">Introduction</h2>
+## Usage
 
-    <p>Welcome to the Python Cipher Library! This project aims to provide a collection of encryption algorithms implemented
-        in Python. Currently, the library supports the following ciphers:</p>
+### Caesar Cipher
 
-    <ul>
-        <li>Caesar Cipher</li>
-        <li>Vigenère Cipher</li>
-        <li>Simple Substitution Cipher</li>
-    </ul>
+Here's an example demonstrating how to use the Caesar Cipher:
 
-    <h2 id="installation">Installation</h2>
+<b>Placeholder for image of the application running</b>
 
-    <p>You can install the library using pip:</p>
+## Roadmap
 
-    <pre><code>pip install python-cipher-library</code></pre>
+We are planning to add more encryption algorithms to this library in the future. Here's what you can expect in upcoming releases:
 
-    <h2 id="usage">Usage</h2>
+- Atbash Cipher
+- ROT13
+- Rail Fence Cipher
+- Playfair Cipher
+- Hill Cipher
+- Enigma Machine
+- RSA Algorithm
 
-    <h3>Caesar Cipher</h3>
+## Contribution
 
-    <p>Here's an example demonstrating how to use the Caesar Cipher:</p>
+Contributions are welcome! If you have suggestions for new features or find any issues, please open an issue or submit a pull request.
 
-    <pre><code>def caesar_cipher_encrypt(text, shift):
-    encrypted_text = ""
-    for char in text:
-        if char.isalpha():
-            if char.isupper():
-                encrypted_text += chr((ord(char) - 65 + shift) % 26 + 65)
-            else:
-                encrypted_text += chr((ord(char) - 97 + shift) % 26 + 97)
-        else:
-            encrypted_text += char
-    return encrypted_text
+## Phase 2: Decryption Algorithms
 
-while True:
-    text = input("Enter the message to encrypt (or type 'exit' to quit): ")
-    if text.lower() == 'exit':
-        print()
-        print("Goodbye! :)")
-        break
-    shift = int(input("Enter the shift value: "))
-    encrypted_text = caesar_cipher_encrypt(text, shift)
-    print("Encrypted message:", encrypted_text)
-    print()
-</code></pre>
-
-    <h2 id="roadmap">Roadmap</h2>
-
-    <p>We are planning to add more encryption algorithms to this library in the future. Here's what you can expect in
-        upcoming releases:</p>
-
-    <ul>
-        <li>Atbash Cipher</li>
-        <li>ROT13</li>
-        <li>Rail Fence Cipher</li>
-        <li>Playfair Cipher</li>
-        <li>Hill Cipher</li>
-        <li>Enigma Machine</li>
-        <li>RSA Algorithm</li>
-    </ul>
-
-    <h2 id="contribution">Contribution</h2>
-
-    <p>Contributions are welcome! If you have suggestions for new features or find any issues, please open an issue or
-        submit a pull request.</p>
-
-    <h2 id="phase-2-decryption-algorithms">Phase 2: Decryption Algorithms</h2>
-
-    <p>In Phase 2 of this project, we will focus on implementing decryption algorithms to complement our existing
-        encryption algorithms. Stay tuned for updates!</p>
-
-</body>
-
-</html>
+In Phase 2 of this project, we will focus on implementing decryption algorithms to complement our existing encryption algorithms. Stay tuned for updates!
